@@ -1,0 +1,30 @@
+@import "../../vars";
+.item {
+    padding: 10px;
+    // border: 2px solid $stroke-color;
+    border-radius: 8px;
+    width: $itemWidth;
+    display: grid;
+    gap: 6px;
+    background: $white70;
+    // box-shadow: ;
+    .imgWrapper {
+        height: 240px;
+        overflow: hidden;
+        border-radius: 8px;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .name {
+        margin-top: 6px;
+        margin: 0;
+    }
+    .price {
+        font-weight: 700;
+        color: $main-color;
+    }
+}

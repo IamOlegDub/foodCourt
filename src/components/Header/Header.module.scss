@@ -1,0 +1,78 @@
+@import "../../vars";
+.header {
+    margin: $headerMargin;
+    .wrapper {
+        background-color: $main-color;
+        background: $main-gradient;
+        border-radius: 12px;
+        // border: 2px $stroke-color solid;
+        height: $headerHeight;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+        color: $text-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a:hover {
+            text-decoration: none;
+        }
+        .cartButtonWrapper {
+            position: relative;
+            // background-color: $stroke-color;
+            border-radius: 6px;
+            // border: 2px solid $elements-color;
+            padding: 2px 20px;
+            color: $text-color;
+            // font-weight: 600;
+            font-size: 1.5rem;
+            transition: all 0.3s ease-out 0.8ms;
+            display: flex;
+            align-items: center;
+            svg {
+                height: 2rem;
+                fill: $white70;
+                transition: all 0.3s ease-out 0.8ms;
+            }
+            &:hover {
+                background-color: $white70;
+            }
+            .cartIconTag {
+                position: absolute;
+                top: 3px;
+                right: 27px;
+                background-color: $elements-color;
+                border-radius: 50%;
+                height: 0.875rem;
+                width: 0.875rem;
+                font-size: 0.625rem;
+                text-align: center;
+                color: $white;
+            }
+            .totalValue {
+                font-size: 1rem;
+            }
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            color: $text-color;
+            font-size: 1.5rem;
+            // background-color: $main-color;
+            padding: 2px 20px;
+            border-radius: 6px;
+            transition: all 0.3s ease-out 0.8ms;
+            svg {
+                // position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                height: 1.875rem;
+                // stroke: red;
+                fill: $white70;
+                stroke: $white70;
+                transition: all 0.3s ease-out 0.8ms;
+            }
+        }
+    }
+}

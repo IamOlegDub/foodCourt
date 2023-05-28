@@ -1,0 +1,17 @@
+@import "../../vars";
+.cartButton {
+    border-radius: 6px;
+    border: none;
+    background: $main-color70;
+    padding: 6px 48px;
+    transition: all 0.3s ease 0.8ms;
+    &:hover {
+        background: $main-color;
+    }
+    &:focus {
+        outline: 0;
+    }
+    &:active {
+        color: $white;
+    }
+}

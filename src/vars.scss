@@ -1,0 +1,80 @@
+$text-color: #1f1f1d;
+$white-text-color: #ecf0f1;
+$grey-text-color: #636e72;
+$main-color: #e67e22;
+$main-color70: #e67e2270;
+$secondary-color: #f0ac71;
+$white: #f8f7f0;
+$white70: #f8f7f070;
+$thumb-color: #e78126;
+$thumb-hover-color: #cfcfcb;
+$hover-color: #efefeb;
+$border-color: rgb(234, 222, 222);
+$stroke-color: #218c74;
+$stroke-color10: #218c7410;
+$stroke-color50: #218c7450;
+$elements-color: #c0392b;
+
+$shadow: 0px 16px 30px -10px rgba(31, 31, 29, 0.5);
+
+$headerHeight: 50px;
+$headerMargin: 10px;
+
+$itemWidth: 350px;
+
+$body-gradient: linear-gradient(
+    180deg,
+    rgba(192, 57, 43, 0.3) 0%,
+    rgba(192, 57, 43, 0.1) 100%
+);
+$main-gradient: linear-gradient(
+    90deg,
+    rgba(33, 140, 116, 0.8) 0%,
+    rgba(240, 172, 113, 0.8) 30%,
+    rgba(240, 172, 113, 0.8) 70%,
+    rgba(33, 140, 116, 0.8016456582633054) 100%
+);
+$main-gradient-reverse: linear-gradient(
+    90deg,
+    rgba(240, 172, 113, 1) 0%,
+    rgba(33, 140, 116, 0.8) 50%,
+    rgba(240, 172, 113, 1) 100%
+);
+$main-gradient-transp: linear-gradient(
+    90deg,
+    rgba(230, 126, 34, 1) 0%,
+    rgba(230, 126, 34, 0) 100%
+);
+
+$stroke-gradient-transp: linear-gradient(
+    90deg,
+    rgba(33, 140, 116, 0) 0%,
+    rgba(33, 140, 116, 0.8) 100%
+);
+
+$elements-gradient: linear-gradient(
+    36deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+);
+@mixin sectionSize {
+    border-radius: 12px;
+    border: 2px $stroke-color solid;
+    height: calc(100vh - #{$headerHeight} - 3 * #{$headerMargin});
+    padding: 10px 30px;
+    // margin-top: $headerMargin;
+    // margin-bottom: $headerMargin;
+    color: $text-color;
+    width: 100%;
+}
+
+@mixin page {
+    display: grid;
+    column-gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $white;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 12px;
+}

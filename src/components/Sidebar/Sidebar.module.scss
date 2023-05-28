@@ -1,0 +1,10 @@
+@import "../../vars";
+.sidebar {
+    @include sectionSize;
+    overflow: auto;
+    border: none;
+    background: $main-gradient-transp;
+    .shopsTitle {
+        margin-bottom: 10px;
+    }
+}

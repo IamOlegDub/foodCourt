@@ -1,0 +1,14 @@
+@import "../../vars";
+.cart {
+    @include page;
+    grid-template-columns: 1fr 1fr;
+    .summery {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .emptyCart {
+        margin-top: 30px;
+    }
+}

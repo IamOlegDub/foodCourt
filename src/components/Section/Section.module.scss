@@ -1,0 +1,7 @@
+@import "../../vars";
+.section {
+    @include sectionSize;
+    overflow: auto;
+    border: none;
+    background: $stroke-gradient-transp;
+}

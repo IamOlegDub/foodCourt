@@ -1,0 +1,21 @@
+@import "../../vars";
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    .formElement {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 70%;
+        label {
+            align-self: flex-start;
+        }
+        input {
+            border-radius: 8px;
+            border: none;
+            padding: 6px 12px;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@import "../../vars";
+.itemList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($itemWidth, 1fr));
+    row-gap: 20px;
+    justify-items: center;
+}

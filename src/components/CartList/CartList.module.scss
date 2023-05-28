@@ -1,0 +1,9 @@
+@import "../../vars";
+.cartList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+    max-height: 85%;
+    margin-top: 20px;
+}

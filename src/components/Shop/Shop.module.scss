@@ -1,0 +1,19 @@
+@import "../../vars";
+.shop {
+    // border: 2px solid $stroke-color;
+    border-radius: 8px;
+    color: $text-color;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-out 0.8ms;
+    list-style-type: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $secondary-color;
+    }
+    &Active {
+        background: $stroke-gradient-transp;
+        &:hover {
+            background: $stroke-gradient-transp;
+        }
+    }
+}
